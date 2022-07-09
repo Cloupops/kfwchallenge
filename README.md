@@ -24,4 +24,30 @@ Step 4:
 
 Now verify that the pull was successful with following command:
 
-<code>az acr repository list --name cloudopscontainer</code>
+<code>az acr repository list --name cloudopscontainer</code><br>
+
+# Task 5: How to install and run Terraform (step-by-step):
+
+Step 1:
+
+Download Terraform from [here]
+Then open the Terraform CLI
+
+Step 2:
+
+Create 4 Terraform files:
+command 1, command 2, command 3, command 4
+
+Step 3:
+
+Export environmental variables with the following command:
+
+
+Step 4:
+
+Add file description
+command1, command 2, command 3, command 4
+
+Step 5:
+
+To run Terraform script, execute the following command:
