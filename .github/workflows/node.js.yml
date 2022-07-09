@@ -54,6 +54,4 @@ jobs:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - run: |
-            cd application && docker compose build ${{ secrets.REGISTRY_LOGIN_SERVER }}/booksapp:${{ github.sha }}
-            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/booksapp:${{ github.sha }}
-            pwd
+            cd application && docker compose build 
