@@ -37,7 +37,6 @@ jobs:
     - run: npm test
 
   build:
-    name: build
     runs-on: ubuntu-latest
     needs: test
     steps:
@@ -48,10 +47,9 @@ jobs:
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
           with:
-            login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-              username: ${{ secrets.REGISTRY_USERNAME }}
-              password: ${{ secrets.REGISTRY_PASSWORD }}
-        
+            login-server: "${{ secrets.REGISTRY_LOGIN_SERVER }}"
+            username: "${{ secrets.REGISTRY_USERNAME }}"
+            password: "${{ secrets.REGISTRY_PASSWORD }}"        
         - name: 'Build and push image'
           uses: azure/docker-login@v1
           with:
