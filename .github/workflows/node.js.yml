@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-
+    name: test
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -39,7 +39,6 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-latest
-    if: ${{ always() }}
     needs: test
     steps:
         # checkout the repo
