@@ -15,7 +15,7 @@ services:
   api:
     build:
       context: ./api
-      image: cloudopscontainer.azurecr.io/bib/api
+    image: cloudopscontainer.azurecr.io/bib/api
     environment:
       PORT: 4000
       MONGO_URI: mongodb://mongodb:27017/dobook
@@ -25,7 +25,7 @@ services:
   frontend:
     build:
       context: ./frontend
-      image: cloudopscontainer.azurecr.io/bib/frontend
+    image: cloudopscontainer.azurecr.io/bib/frontend
     environment:
       API_HOST: api
       API_PORT: 4000
