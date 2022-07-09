@@ -44,7 +44,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./application/${{ matrix.project }}
+        working-directory: ./application
 
     strategy:
       matrix:
