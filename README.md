@@ -17,10 +17,8 @@ A window in Chrome pops up and you have to log into your account
 
 Execute the following two commands:
 
-<code>
-docker pull cloudopscontainer.azurecr.io/application_api  
-docker pull cloudopscontainer.azurecr.io/application_frontend
-</code>  
+<code>docker pull cloudopscontainer.azurecr.io/application_api</code> 
+<code>  docker pull cloudopscontainer.azurecr.io/application_frontend</code><br>
 
 <u>Step 4:</u>
 
