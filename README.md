@@ -1,26 +1,26 @@
 # kfwchallenge
 DevOps Challenge
 
-# How to pull docker image from ACR (step-by-step):
+# Task 4: How to pull docker image from ACR (step-by-step):
 
-<u>Step 1:</u>
+Step 1:
 
 Open Winodws PowerShell with administrative permissions
 
-<u>Step 2:</u>
+Step 2:
 
 Execute command <code>az login</code>  
 
 A window in Chrome pops up and you have to log into your account
 
-<u>Step 3:</u>
+Step 3:
 
 Execute the following two commands:
 
-<code>docker pull cloudopscontainer.azurecr.io/application_api</code> 
+<code>docker pull cloudopscontainer.azurecr.io/application_api</code><br>
 <code>  docker pull cloudopscontainer.azurecr.io/application_frontend</code><br>
 
-<u>Step 4:</u>
+Step 4:
 
 Now verify that the pull was successful with following command:
 
