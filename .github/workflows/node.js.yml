@@ -55,4 +55,4 @@ jobs:
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - run: |
             cd application && docker compose build 
-            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/bib/api
+            docker compose push 
