@@ -15,6 +15,7 @@ import Rent from "./form/Form.js";
 const generateClassName = createGenerateClassName();
 const jss = create({
   ...jssPreset(),
+  //Hi
   // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
   insertionPoint: document.getElementById("jss-insertion-point"),
 });
