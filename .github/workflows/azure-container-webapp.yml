@@ -44,7 +44,13 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./application
+        working-directory: ./application/${{ matrix.project }}
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        project: [frontend, api, db-seed]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v3
@@ -67,7 +73,7 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
-          file: ./Dockerfile
+          file: ./application/${{ matrix.project }}/Dockerfile
 
   deploy:
     permissions:
@@ -77,6 +83,7 @@ jobs:
       run:
         shell: bash
         working-directory: ./application
+
     needs: build
     environment:
       name: 'Development'
