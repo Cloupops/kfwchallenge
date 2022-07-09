@@ -56,5 +56,3 @@ jobs:
         - run: |
             cd application && docker compose build 
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/bib/api
-            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/bib/frontend
-            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/bib/mongo-seed
