@@ -54,4 +54,4 @@ jobs:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - run: cd application && docker compose build 
-         #run: cd application && docker compose push 
+        - run: cd application && docker compose push 
