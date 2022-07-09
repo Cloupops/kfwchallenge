@@ -5,6 +5,7 @@ const Schema = mongoose.Schema;
 
 const BookSchema = new Schema({
     bookname: {
+        
         type: String
     },
     bookId: {
