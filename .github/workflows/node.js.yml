@@ -53,6 +53,5 @@ jobs:
             login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
-        - run: |
-            cd application && docker compose build 
-            docker compose push 
+        - run: cd application && docker compose build 
+        - run: docker compose push 
